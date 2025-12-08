@@ -140,13 +140,13 @@ app.get('/reset-password/:token', (req, res) => {
             const data = await response.json();
             
             if (response.ok) {
-              showMessage('✅ Contraseña actualizada correctamente', 'success');
+              showMessage('Contraseña actualizada correctamente', 'success');
               form.reset();
             } else {
-              showMessage('❌ ' + data.message, 'error');
+              showMessage(data.message, 'error');
             }
           } catch (error) {
-            showMessage('❌ Error de conexión', 'error');
+            showMessage('Error de conexión', 'error');
           }
         });
         
@@ -178,8 +178,8 @@ app.use((req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log('='.repeat(50));
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
-  console.log(`📚 Proyecto Final - Estudiante`);
-  console.log(`📊 Modo: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Proyecto Final - Estudiante`);
+  console.log(`Modo: ${process.env.NODE_ENV || 'development'}`);
   console.log('='.repeat(50));
 });

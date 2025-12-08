@@ -36,19 +36,16 @@ export default class EmailService {
           <p><strong>Este enlace expirará en 1 hora.</strong></p>
           <p>Si no solicitaste este cambio, puedes ignorar este correo.</p>
           <hr>
-          <p style="color: #666; font-size: 12px;">
-            Proyecto Final - Curso Backend
-          </p>
         </div>
       `
     };
 
     try {
       const info = await this.transporter.sendMail(mailOptions);
-      console.log('📧 Email enviado:', info.messageId);
+      console.log('Email enviado:', info.messageId);
       return true;
     } catch (error) {
-      console.error('❌ Error enviando email:', error);
+      console.error('Error enviando email:', error);
       return false;
     }
   }
