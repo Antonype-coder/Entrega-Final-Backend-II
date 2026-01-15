@@ -1,3 +1,5 @@
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './config/swagger.js';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
@@ -25,6 +27,7 @@ connectDB();
 app.use('/api/sessions', sessionRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/carts', cartRoutes);
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.get('/health', (req, res) => {
   res.json({ 
