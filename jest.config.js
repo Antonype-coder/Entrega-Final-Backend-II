@@ -1,4 +1,7 @@
 export default {
   testEnvironment: 'node',
-  verbose: true
+  setupFiles: ['dotenv/config'],
+  testPathIgnorePatterns: ['/node_modules/'],
+  verbose: true,
+  forceExit: true
 };
