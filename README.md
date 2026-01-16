@@ -29,3 +29,6 @@
 ### ** Descargar la imagen**
 ```bash
 docker pull anton2705/entrega-final-3
+
+### ** Ejecutar**
+`docker run -d -p 3000:3000 --env-file .env anton2705/entrega-final-3`
