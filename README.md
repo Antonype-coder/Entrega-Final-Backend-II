@@ -4,8 +4,6 @@
 - **Repositorio y Imagen Docker Hub:** [anton2705/entrega-final-3](https://hub.docker.com/r/anton2705/entrega-final-3)
 - **Tecnologías:** Node.js, Express, MongoDB, JWT, Docker
 
-## Objetivos Cumplidos
-
 ### Documentación Swagger del módulo "Users"
 - Endpoints documentados: `/api/sessions/register`, `/api/sessions/login`, `/api/sessions/current`
 
