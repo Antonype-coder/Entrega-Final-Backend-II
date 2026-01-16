@@ -1,4 +1,4 @@
-# Proyecto Final Backend III - Ecommerce API
+# Proyecto Final Backend III
 
 ## Información del Proyecto
 - **Repositorio y Imagen Docker Hub:** [anton2705/entrega-final-3](https://hub.docker.com/r/anton2705/entrega-final-3)
