@@ -5,7 +5,7 @@ import User from '../dao/models/User.js';
 import Product from '../dao/models/Product.js';
 import Cart from '../dao/models/Cart.js';
 
-describe('Tests API Ecommerce', () => {
+describe('Tests', () => {
   
   beforeAll(async () => {
     await mongoose.connect(process.env.MONGO_URI);
