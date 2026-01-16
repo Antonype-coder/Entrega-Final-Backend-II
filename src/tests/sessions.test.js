@@ -46,7 +46,6 @@ describe('Tests API Ecommerce', () => {
     code: 'LAP001'
   };
 
-  // Tests de sesiones
   test('Registro de usuario', async () => {
     const res = await request(app)
       .post('/api/sessions/register')
@@ -120,7 +119,6 @@ describe('Tests API Ecommerce', () => {
     expect(res.statusCode).toBe(200);
   });
 
-  // Tests de productos
   test('Listar productos', async () => {
     const res = await request(app)
       .get('/api/products');
@@ -159,7 +157,6 @@ describe('Tests API Ecommerce', () => {
     expect(res.statusCode).toBe(200);
   });
 
-  // Tests de carritos
   test('Crear carrito', async () => {
     const res = await request(app)
       .post('/api/carts');
@@ -194,7 +191,6 @@ describe('Tests API Ecommerce', () => {
     expect(res.statusCode).toBe(200);
   });
 
-  // Tests generales
   test('Health check', async () => {
     const res = await request(app)
       .get('/health');
