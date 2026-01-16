@@ -26,9 +26,9 @@
 
 ## Cómo Ejecutar con Docker
 
-### ** Descargar la imagen**
+### ** Descargar la imagen y Ejecutar**
 ```bash
 docker pull anton2705/entrega-final-3
 
-### ** Ejecutar**
+** Ejecutar**
 `docker run -d -p 3000:3000 --env-file .env anton2705/entrega-final-3`
